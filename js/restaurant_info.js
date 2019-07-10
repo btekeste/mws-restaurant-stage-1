@@ -22,7 +22,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-        mapboxToken: '<your MAPBOX API KEY HERE>',
+        mapboxToken: 'pk.eyJ1IjoiYmVyaGV0ZWtlc3RlIiwiYSI6ImNqeGM3a2dvMDAwaXEzeW1tc2p4bm04NWYifQ.I3rcTr0NO_vhYJ6fUZjrWw',
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -32,6 +32,10 @@ initMap = () => {
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
     }
+
+    //tabindex was added by Mapbox
+    //Removing the attribute because it seems that the focus disappears
+    document.getElementById('map').removeAttribute('tabindex');
   });
 }  
  
