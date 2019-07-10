@@ -17,7 +17,7 @@ This project is a web-based application that provides restaurant reviews. My con
 Note: UI frameworks such as jQuery, React, Angular, Vue, etc. were not allowed for this project as per Udacity's mandate.
 
 ##### Instructions
-1. Clone the code from this repository .....
+1. Clone the code from my [repository](https://github.com/btekeste/mws-restaurant-stage-1)
 2. Boot up the local HTTP server: 
    * python -m SimpleHTTPServer 8000 (for Python 2.x users)
    * python3 -m http.server 8000 (for Python 3.x users)
